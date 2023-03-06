@@ -8,7 +8,7 @@
 * express
 
 ### _Access to Web App_
-Link: [SBD Web App](https://sbdapp.fly.dev/login)
+Link: [SBD Web App](https://sbdapp.fly.dev/)
 
 ### _Sample Accounts to Use_
 
