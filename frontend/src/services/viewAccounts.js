@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = 'http://localhost:3001'
+const baseUrl = '/api/accounts'
 
 
 const userAccounts = async userToken => {
@@ -7,7 +7,7 @@ const userAccounts = async userToken => {
         headers: { Authorization: userToken }
     }
 
-    const res = await axios.get(`${baseUrl}/api/accounts`,config)
+    const res = await axios.get(baseUrl,config)
     return res.data
 }
 

@@ -12,6 +12,7 @@ const loginRouter = require('./controllers/login');
 const accountsRouter = require('./controllers/viewAccounts');
 const transactionsRouter = require('./controllers/viewTransactions');
 const makeTransactionRouter = require('./controllers/makeTransaction');
+const authUser = require('./controllers/auth');
 
 const url = process.env.MONGODB_URI;
 
@@ -25,6 +26,7 @@ app.use(express.static('build'))
 app.use(middleware.tokenExtractor)
 
 app.use('/api/login', loginRouter);
+app.use('/api/auth', authUser);
 app.use('/api/accounts', accountsRouter);
 app.use('/api/transactions', transactionsRouter);
 app.use('/api/makeTransaction', makeTransactionRouter);

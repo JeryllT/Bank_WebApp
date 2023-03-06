@@ -6,6 +6,7 @@ const ScheduledTrans = require('../models/ScheduledTrans');
 makeTransactionRouter.post('/', async (request, response) => {
 
     const {transferAmt, senderAccId, recipientAccId, comment} = request.body;
+    console.log(transferAmt, senderAccId, recipientAccId, comment)
 
     const token = request.token;
     const decodedToken = jwt.verify(token, process.env.SECRET);
