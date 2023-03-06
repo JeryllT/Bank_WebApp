@@ -10,7 +10,7 @@ import ProtectedRoutes from './utils/ProtectedRoutes';
 
 // Pages
 import Login from './pages/Login';
-import Home from './pages/Home/home';
+import Home from './pages/Home';
 import ViewAccounts from './pages/ViewAccounts';
 import ViewTransactions from './pages/ViewScheduledTrans';
 import MakeTransactions from './pages/MakeTransactions';
