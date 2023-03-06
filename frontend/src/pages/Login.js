@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import Container from 'react-bootstrap/esm/Container';
+import Alert from 'react-bootstrap/Alert';
 import {useState, useEffect} from 'react';
 import loginService from '../services/login';
 import { useDispatch } from 'react-redux';
@@ -12,6 +13,8 @@ import Background from '../assets/mbs.jpeg';
 
 const Login = () => {
     const [selectedButton, setSelectedButton] = useState("")
+    const [alert, setAlert] = useState(false)
+    const [msg, setMsg] = useState("")
     const dispatch = useDispatch()
     const navigate = useNavigate()
     
@@ -38,7 +41,13 @@ const Login = () => {
                 dispatch(setToken(user.token))
                 navigate("/")
             } catch (error) {
-                console.log(error.message)
+                setAlert(true)
+                setMsg(error.response.data.error)
+
+                setTimeout(() => {
+                    setAlert(false)
+                    setMsg("")
+                }, 3000)
             }    
 
         } 
@@ -53,14 +62,15 @@ const Login = () => {
         <div style={{width: "100%", height: "100%", backgroundImage: `url(${Background})`, backgroundSize: "100% 100%"}}>
             <Container fluid="md" className="d-flex" style={{justifyContent: "center", alignItems: "center", height: "100%"}}>
                 <Card style={{minWidth: "10rem", backgroundColor: "grey"}}>
+                    {alert ? <Alert variant="danger" style={{margin: "10px 10px"}}>{msg}</Alert> : ""}
                     <Form onSubmit={login} style={{margin: "2rem 2rem"}}>
                         <Form.Group controlId="formBasicEmail" className="mb-3">
-                        <Form.Label style={{color: "white"}}>Username</Form.Label>
-                        <Form.Control name="username"  type="text" placeholder="username" required/>
+                            <Form.Label style={{color: "white"}}>Username</Form.Label>
+                            <Form.Control name="username"  type="text" placeholder="username" required/>
                         </Form.Group>
                         <Form.Group controlId="formPassword" className="mb-3">
-                        <Form.Label style={{color: "white"}}>Password</Form.Label>
-                        <Form.Control name="password" type="password" placeholder="Password" required/>
+                            <Form.Label style={{color: "white"}}>Password</Form.Label>
+                            <Form.Control name="password" type="password" placeholder="Password" required/>
                         </Form.Group>
                         <Button name="login" onClick={(e) => setSelectedButton(e.target.name)} className="mb-3" variant="primary" type="submit" >Login</Button>
                         {/* <Button name="register" onClick={(e) => setSelectedButton(e.target.name)} className="mb-3 ms-3" variant="primary" type="submit" >Register New Account</Button> */}
