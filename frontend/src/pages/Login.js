@@ -41,11 +41,12 @@ const Login = () => {
                 console.log(error.message)
             }    
 
-        } else if (selectedButton === "register") {
-            console.log(e.target.name)
-            console.log(e.target.elements.email.value)
-            console.log(e.target.elements.password.value)
-        }
+        } 
+        // else if (selectedButton === "register") {
+        //     console.log(e.target.name)
+        //     console.log(e.target.elements.email.value)
+        //     console.log(e.target.elements.password.value)
+        // }
       }
 
     return (
@@ -62,7 +63,7 @@ const Login = () => {
                         <Form.Control name="password" type="password" placeholder="Password" required/>
                         </Form.Group>
                         <Button name="login" onClick={(e) => setSelectedButton(e.target.name)} className="mb-3" variant="primary" type="submit" >Login</Button>
-                        <Button name="register" onClick={(e) => setSelectedButton(e.target.name)} className="mb-3 ms-3" variant="primary" type="submit" >Register New Account</Button>
+                        {/* <Button name="register" onClick={(e) => setSelectedButton(e.target.name)} className="mb-3 ms-3" variant="primary" type="submit" >Register New Account</Button> */}
                     </Form>
                 </Card>
             </Container>
