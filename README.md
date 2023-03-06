@@ -1,5 +1,22 @@
 # Banking Webapp
 
+### _Access to Web App_
+Link: [SBD Web App](https://sbdapp.fly.dev/login)
+
+### _Sample Accounts to Use_
+
+* Name: Mary Tan
+  Username: SeederDBS
+  Password: iWant2JoinDBS
+
+* Name: Gary Ong
+  Username: AcerDBS
+  Password: Top5Seeder
+
+* Name: Harry Goh
+  Username: AssociateDBS
+  Password: Whatis2Years
+
 ### _Features Include_
 * Ability to Authenticate User
 
