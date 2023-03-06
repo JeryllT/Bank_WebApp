@@ -13,6 +13,7 @@ import Home from './pages/Home';
 import ViewAccounts from './pages/ViewAccounts';
 import ViewTransactions from './pages/ViewScheduledTrans';
 import MakeTransactions from './pages/MakeTransactions';
+import NotFound from './pages/NotFound';
 
 
 import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from 'react-router-dom';
@@ -20,7 +21,7 @@ import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route>
+    <>
       <Route element={<ProtectedRoutes />}>
         <Route path="/" element={<LoggedInLayout />}>
           <Route index element={<Home />} />
@@ -30,7 +31,8 @@ const router = createBrowserRouter(
         </Route>
       </Route>
       <Route path="/login" element={<Login />} />
-    </Route>
+      <Route path="*" element={<NotFound />} />
+    </>
   )
 )
 

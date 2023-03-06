@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const mongoose = require('mongoose');
+const path = require('path');
 
 // Middleware
 const middleware = require('./utils/middleware');
@@ -30,5 +31,10 @@ app.use('/api/auth', authUser);
 app.use('/api/accounts', accountsRouter);
 app.use('/api/transactions', transactionsRouter);
 app.use('/api/makeTransaction', makeTransactionRouter);
+app.use('*', (req, res) => {
+    // console.log(path.join(__dirname, 'build/index.html'))
+    // This provides an absolute path to the index.html file, allowing the frontend to handle 404 routes.
+    res.sendFile(path.join(__dirname, 'build/index.html'))
+})
 
 module.exports = app;
