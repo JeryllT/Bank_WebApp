@@ -1,5 +1,4 @@
 import './App.css';
-import './navbar.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Layouts
