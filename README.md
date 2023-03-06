@@ -1,5 +1,12 @@
 # Banking Webapp
 
+### _Technologies / Stack used_
+* react.js
+* Bootstrap
+* node.js
+* mongodb
+* express
+
 ### _Access to Web App_
 Link: [SBD Web App](https://sbdapp.fly.dev/login)
 
