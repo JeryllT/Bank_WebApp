@@ -12,7 +12,7 @@ Link: [SBD Web App](https://sbdapp.fly.dev/)
 
 ### _Sample Accounts to Use_
 
-* Name: Tom Lim
+* Name: Tom Lim  
   Username: ExecutiveDBS  
   Password: DBSBestBank2022
 
