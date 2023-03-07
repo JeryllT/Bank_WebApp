@@ -6,6 +6,7 @@
 * node.js
 * mongodb
 * express
+* fly.io (PaaS)
 
 ### _Access to Web App_
 Link: [SBD Web App](https://sbdapp.fly.dev/)
