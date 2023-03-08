@@ -54,7 +54,7 @@ const importBankAccountData = async () => {
             AccountID: bankAccountData[account].AccountID,
             UserID: bankAccountData[account].UserID,
             AccountType: bankAccountData[account].AccountType,
-            Balance: bankAccountData[account].Balance,
+            AcccountBalance: bankAccountData[account].AcccountBalance,
             User: userId
         })
         await newAccount.save()
@@ -90,6 +90,8 @@ console.log("done")
 }
 
 // importUserData()
+// importBankAccountData()
+// importScheduledTransData()
 
 const PORT = process.env.PORT
 app.listen(PORT, () => {
