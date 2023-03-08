@@ -1,8 +1,8 @@
 [
     {
         "UserID": 1,
-        "Username": "ExecutiveDBS",
-        "Password": "DBSBestBank2022",
+        "Username": "TomLim",
+        "Password": "Tom123!",
         "Firstname": "Tom",
         "Lastname": "Lim",
         "Email": "TomLim@easymail.com",
@@ -11,8 +11,8 @@
     },
     {
         "UserID": 2,
-        "Username": "SeederDBS",
-        "Password": "iWant2JoinDBS",
+        "Username": "MaryTan",
+        "Password": "Mary123!",
         "Firstname": "Mary",
         "Lastname": "Tan",
         "Email": "MaryTan@simplemail.com",
@@ -21,8 +21,8 @@
     },
     {
         "UserID": 3,
-        "Username": "AcerDBS",
-        "Password": "Top5Seeder",
+        "Username": "GaryOng",
+        "Password": "Gary123!",
         "Firstname": "Gary",
         "Lastname": "Ong",
         "Email": "GaryOng@easymail.com",
@@ -31,8 +31,8 @@
     },
     {
         "UserID": 4,
-        "Username": "AssociateDBS",
-        "Password": "Whatis2Years",
+        "Username": "HarryGoh",
+        "Password": "Harry123!",
         "Firstname": "Harry",
         "Lastname": "Goh",
         "Email": "HarryGoh@bestbank.com",
@@ -41,8 +41,8 @@
     },
     {
         "UserID": 5,
-        "Username": "PresidentDBS",
-        "Password": "Multiplier3.5%",
+        "Username": "CherylChia",
+        "Password": "Cheryl123!",
         "Firstname": "Cheryl",
         "Lastname": "Chia",
         "Email": "CherylChia@bestbank.com",
