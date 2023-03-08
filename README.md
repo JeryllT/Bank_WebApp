@@ -14,20 +14,24 @@ Link: [SBD Web App](https://sbdapp.fly.dev/)
 ### _Sample Accounts to Use_
 
 * Name: Tom Lim  
-  Username: ExecutiveDBS  
-  Password: DBSBestBank2022
+  Username: TomLim  
+  Password: Tom123!
 
 * Name: Mary Tan  
-  Username: SeederDBS  
-  Password: iWant2JoinDBS
+  Username: MaryTan  
+  Password: Mary123!
 
 * Name: Gary Ong  
-  Username: AcerDBS  
-  Password: Top5Seeder
+  Username: GaryOng  
+  Password: Gary123!
 
 * Name: Harry Goh  
-  Username: AssociateDBS  
-  Password: Whatis2Years
+  Username: HarryGoh  
+  Password: Harry123!
+
+* Name: Cheryl Chia  
+  Username: CherylChia  
+  Password: Cheryl123!
 
 ### _Features Include_
 * Ability to Authenticate User
