@@ -36,7 +36,7 @@ Link: [SBD Web App](https://sbdapp.fly.dev/)
 ### _Features Include_
 * Ability to Authenticate User
 
-  * View under "User.json" for demo accounts (Registration is unavailable)
+  * Ability to log in / route authenticated users
     ![alt text](https://github.com/JeryllT/Bank_WebApp/blob/main/Screenshots/Screenshot%202023-02-10%20at%2011.38.00%20PM.png "Login Feature")
 
 * Ability to View Transactions (Sent & Received)
